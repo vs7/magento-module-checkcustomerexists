@@ -1,0 +1,5 @@
+app/code/community/VS7/CheckCustomerExists                             app/code/community/VS7/CheckCustomerExists
+app/etc/modules/VS7_CheckCustomerExists.xml                            app/etc/modules/VS7_CheckCustomerExists.xml
+app/design/frontend/base/default/layout/vs7_checkcustomerexists.xml    app/design/frontend/base/default/layout/vs7_checkcustomerexists.xml
+app/design/frontend/base/default/template/vs7_checkcustomerexists      app/design/frontend/base/default/template/vs7_checkcustomerexists
+app/locale/ru_RU/VS7_CheckCustomerExists.csv                           app/locale/ru_RU/VS7_CheckCustomerExists.csv

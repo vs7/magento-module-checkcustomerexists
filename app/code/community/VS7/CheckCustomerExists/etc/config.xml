@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <VS7_CheckCustomerExists>
+            <version>0.1.0</version>
+        </VS7_CheckCustomerExists>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <vs7_checkcustomerexists>
+                    <file>vs7_checkcustomerexists.xml</file>
+                </vs7_checkcustomerexists>
+            </updates>
+        </layout>
+        <routers>
+            <vs7_checkcustomerexists>
+                <use>standard</use>
+                <args>
+                    <module>VS7_CheckCustomerExists</module>
+                    <frontName>cce</frontName>
+                </args>
+            </vs7_checkcustomerexists>
+        </routers>
+        <translate>
+            <modules>
+                <VS7_CheckCustomerExists>
+                    <files>
+                        <default>VS7_CheckCustomerExists.csv</default>
+                    </files>
+                </VS7_CheckCustomerExists>
+            </modules>
+        </translate>
+    </frontend>
+</config>

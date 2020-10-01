@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <onestepcheckout_index_index>
+        <reference name="content">
+            <block type="core/template" name="vs7_checkcustomerexists" template="vs7_checkcustomerexists/vs7_checkcustomerexists.phtml" after="-"/>
+        </reference>
+    </onestepcheckout_index_index>
+</layout>

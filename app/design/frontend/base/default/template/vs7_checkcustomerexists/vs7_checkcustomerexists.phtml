@@ -1,0 +1,25 @@
+<script type="text/javascript">
+//<![CDATA[
+$('billing:email').addClassName('validate-email-exists');
+Validation.addAllThese([
+    [
+        'validate-email-exists',
+        '<?php echo $this->__('Customer already exists'); ?>',
+        function(v) {
+            var form_key = $$('#mini-login-form input[name="form_key"]').first().value;
+            var commOptions = {
+                method: 'post',
+                asynchronous: false,
+                evalJS: false,
+                evalJSON: false,
+                requestHeaders: {Accept: 'application/json'},
+                parameters: {email: v, form_key: form_key}
+            };
+            var response = new Ajax.Request("/cce/index/index/", commOptions);
+            var json = response.transport.responseText.evalJSON(true);
+            return !json.exists;
+        }
+    ]
+]);
+//]]>
+</script>
